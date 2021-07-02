@@ -98,7 +98,7 @@ function App(props) {
 
   return (
     <div className="App" style={div}>
-      <h1 style={h1}>Player Roster</h1>
+      <h1 style={h1}>Team Roster</h1>
       <Link to="/new"><button style={button}>Add New Player</button></Link>
       <Switch>
         <Route
