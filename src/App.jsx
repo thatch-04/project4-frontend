@@ -77,7 +77,7 @@ function App(props) {
       },
       body: JSON.stringify(player)
     })
-    getPlayer()
+    getPlayers()
   }
 
   const deletePlayer = async (player) => {
