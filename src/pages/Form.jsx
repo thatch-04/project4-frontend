@@ -20,6 +20,18 @@ const Form = ({initialPlayer, history, handleSubmit, buttonLabel}) => {
         history.push("/")
     }
 
+    const input = {
+        backgroundColor: "white",
+        border: "3px red",
+        color: "black"
+    }
+
+    const button = {
+        backgroundColor: "navy",
+        margin: "auto",
+        color: "red"
+      }
+
     return (
         <form onSubmit = {handleSubmission}>
 
@@ -28,6 +40,7 @@ const Form = ({initialPlayer, history, handleSubmit, buttonLabel}) => {
             onChange={handleChange}
             value={formData.player}
             name="player"
+            style={input}
         />
 
         <input
@@ -35,9 +48,10 @@ const Form = ({initialPlayer, history, handleSubmit, buttonLabel}) => {
             onChange={handleChange}
             value={formData.details}
             name="details"
+            style={input}
         />
 
-        <input type="submit" value={buttonLabel}/>
+        <input type="submit" value={buttonLabel} style={button}/>
 
     </form>
     )

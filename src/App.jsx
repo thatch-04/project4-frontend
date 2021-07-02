@@ -40,8 +40,8 @@ function App(props) {
   const [players, setPlayers] = useState([])
 
   const nullPlayer = {
-    player: "",
-    details: ""
+    player: "player",
+    details: "details"
   }
 
   const [targetPlayer, setTargetPlayer] = useState(nullPlayer)

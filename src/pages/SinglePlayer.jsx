@@ -18,7 +18,8 @@ const SinglePlayer = ({players, match, edit, deletePlayer, history}) => {
     }
 
     const h1 = {
-        color: "red"
+        color: "red",
+        display: "bold"
     }
 
     const h2 = {
